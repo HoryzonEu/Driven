@@ -1,0 +1,54 @@
+########  ########  #### ##     ## ######## ##    ## 
+##     ## ##     ##  ##  ##     ## ##       ###   ## 
+##     ## ##     ##  ##  ##     ## ##       ####  ## 
+##     ## ########   ##  ##     ## ######   ## ## ## 
+##     ## ##   ##    ##   ##   ##  ##       ##  #### 
+##     ## ##    ##   ##    ## ##   ##       ##   ### 
+########  ##     ## ####    ###    ######## ##    ## 
+
+name: ${project.name}
+version: ${project.version}
+main: eu.horyzon.driven.bukkit.BukkitDriven
+description: Driven plugin for Horyzon Network servers.
+author: LLIcocoman_Hrz
+website: http://horyzon.eu
+
+ #####                                                   
+#     #  ####  #    # #    #   ##   #    # #####   ####  
+#       #    # ##  ## ##  ##  #  #  ##   # #    # #      
+#       #    # # ## # # ## # #    # # #  # #    #  ####  
+#       #    # #    # #    # ###### #  # # #    #      # 
+#     # #    # #    # #    # #    # #   ## #    # #    # 
+ #####   ####  #    # #    # #    # #    # #####   #### 
+commands:
+  driven:
+    usage: |
+           Syntax error!
+           Use /<command> (yes|no)
+    description: Vote on the poll!
+    aliases: [polls, poll, pol]
+  results:
+    usage: |
+           Syntax error!
+           Use /<command> without any args
+    description: View poll results.
+    permission: poll.results
+    permission-message: *noperms
+
+######                                                              
+#     # ###### #####  #    # #  ####   ####  #  ####  #    #  ####
+#     # #      #    # ##  ## # #      #      # #    # ##   # #
+######  #####  #    # # ## # #  ####   ####  # #    # # #  #  ####
+#       #      #####  #    # #      #      # # #    # #  # #      #
+#       #      #   #  #    # # #    # #    # # #    # #   ## #    #
+#       ###### #    # #    # #  ####   ####  #  ####  #    #  ####
+permissions:
+  driven.vote:
+    description: Vote on polls.
+    default: true
+  poller.results:
+    description: View poll results.
+    default: op
+  poller.skip:
+    description: Skip spammy stuff.
+    default: op

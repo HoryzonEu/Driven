@@ -1,0 +1,14 @@
+########  ########  #### ##     ## ######## ##    ## 
+##     ## ##     ##  ##  ##     ## ##       ###   ## 
+##     ## ##     ##  ##  ##     ## ##       ####  ## 
+##     ## ########   ##  ##     ## ######   ## ## ## 
+##     ## ##   ##    ##   ##   ##  ##       ##  #### 
+##     ## ##    ##   ##    ## ##   ##       ##   ### 
+########  ##     ## ####    ###    ######## ##    ## 
+
+name: ${project.name}
+version: ${project.version}
+main: eu.horyzon.driven.bungee.BungeeDriven
+description: Driven plugin for Horyzon Network servers.
+author: LLIcocoman_Hrz
+website: http://horyzon.eu
